@@ -5,7 +5,7 @@ const {kafka}=require("./client")
 async function init(){
     const admin=kafka.admin()
     console.log("Admin connecting...")
-    admin.connect()
+    await admin.connect()
     console.log("Admin connection successfully")
 
     //create the topics

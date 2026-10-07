@@ -3,5 +3,5 @@ const {Kafka}=require("kafkajs")
 //creating kafka client
 exports.kafka=new Kafka({
     clientId:'my-app',
-    brokers:["192.168.1.122"]
+    brokers:["localhost:9092"]
 })
